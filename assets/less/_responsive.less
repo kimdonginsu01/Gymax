@@ -1,0 +1,259 @@
+// Small device
+
+@media (max-width: 575.98px) {
+  .main-content {
+    .hero-content {
+      top: 65%;
+      margin-bottom: 4px;
+    }
+    .banner {
+      transform: none;
+    }
+    .listing {
+      .listing-item {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+    }
+    .testimonials {
+      .title {
+        font-size: 20px;
+      }
+      .user-img {
+        margin-top: 28px;
+      }
+      .description {
+        font-size: 12px;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+// Mobile & Tablet
+
+@media (max-width: 1023px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+}
+
+// Large device
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .header__logo {
+    img {
+      width: 160px;
+    }
+  }
+
+  .main-content {
+    .hero-content {
+      .title {
+        font-size: 48px;
+        margin-bottom: 38px;
+      }
+
+      .subtitle {
+        font-size: 28px;
+        margin-bottom: 16px;
+      }
+
+      .description {
+        line-height: 1.4;
+        font-size: 14px;
+        margin-bottom: 32px;
+      }
+    }
+
+    .banner {
+      margin: 0 12px;
+      &-group {
+        .col__inner {
+          height: 205px;
+        }
+      }
+    }
+
+    .footer {
+      .slogan-content {
+        p {
+          padding: 0 80px;
+        }
+      }
+      .contact-list-item {
+        min-height: 32px;
+      }
+    }
+  }
+}
+
+// Tablet
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .header {
+    height: @header-height;
+    .navbar {
+      margin-left: 20px;
+    }
+    .navbar-item {
+      font-size: 14px;
+      line-height: @header-height;
+      padding: 0 14px;
+    }
+  }
+
+  .main-content {
+    .hero-content {
+      .title {
+        font-size: 34px;
+        margin-bottom: 18px;
+      }
+      .subtitle {
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+    }
+
+    .banner-group {
+      display: flex;
+      .col__inner {
+        height: 205px;
+        flex: 0 0 50%;
+      }
+    }
+
+    .brands {
+      .brand-item {
+        img {
+          max-width: 80px;
+        }
+      }
+    }
+
+    .footer {
+      .slogan-content {
+        p {
+          padding: 0 48px;
+        }
+      }
+    }
+  }
+}
+
+// Mobile
+
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  @header-mobile-height: 46px;
+  .header {
+    height: @header-mobile-height;
+
+    &__action {
+      height: @header-mobile-height;
+
+      i {
+        padding: 8px 12px;
+      }
+    }
+
+    .mobile-menu {
+      height: 46px;
+      line-height: 46px;
+
+      .icon {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .main-content {
+    .hero {
+      &-content {
+        top: 50%;
+        right: 50%;
+
+        .title {
+          font-size: 20px;
+          margin-bottom: 8px;
+        }
+        .subtitle {
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .banner {
+      margin: 0 12px;
+      justify-content: center;
+
+      .col__inner {
+        height: 170px;
+      }
+
+      .banner-group {
+        display: flex;
+        flex-direction: column;
+        .banner__icon {
+          margin-top: 12px;
+        }
+      }
+      div:nth-of-type(3n + 2) {
+        .banner-group {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+
+    .listing {
+      &-option {
+        .listing-item {
+          font-size: 14px;
+        }
+      }
+
+      .home-products {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+    }
+
+    .brands {
+      margin-left: 15px;
+      margin-right: 15px;
+      .brand-item {
+        margin-top: 12px;
+        img {
+          width: 80px;
+        }
+      }
+    }
+
+    .testimonials {
+      .title {
+        line-height: 1.4;
+      }
+    }
+
+    .footer {
+      .slogan-content {
+        p {
+          padding: 0;
+        }
+      }
+      .contact {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 12px 0px;
+    max-width: 120px;
+  }
+}

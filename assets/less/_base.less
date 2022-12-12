@@ -1,0 +1,31 @@
+.btn {
+  max-width: 170px;
+  color: #fff;
+  font-size: 14px;
+  padding: 16px 20px;
+  border: 1px solid #fff;
+  text-align: center;
+  .smoothTransition();
+
+  &:hover {
+    background-color: @primary-color;
+    cursor: pointer;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+
+  &-link {
+    height: 10px;
+    width: 10px;
+    margin: 0 4px;
+    background-color: #ccc;
+    border-radius: 50%;
+    &--active {
+      background-color: @primary-color;
+    }
+  }
+}
