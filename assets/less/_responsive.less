@@ -1,35 +1,3 @@
-// Small device
-
-@media (max-width: 575.98px) {
-  .main-content {
-    .hero-content {
-      top: 65%;
-      margin-bottom: 4px;
-    }
-    .banner {
-      transform: none;
-    }
-    .listing {
-      .listing-item {
-        font-size: 12px;
-        padding: 8px 12px;
-      }
-    }
-    .testimonials {
-      .title {
-        font-size: 20px;
-      }
-      .user-img {
-        margin-top: 28px;
-      }
-      .description {
-        font-size: 12px;
-        line-height: 1.4;
-      }
-    }
-  }
-}
-
 // Mobile & Tablet
 
 @media (max-width: 1023px) {
@@ -40,7 +8,16 @@
 
 // Large device
 
-@media (min-width: 1024px) and (max-width: 1239px) {
+@media (min-width: 1024px) and (max-width: 1238.98px) {
+  .header__action {
+    position: relative;
+    left: -8px;
+
+    i {
+      padding: 8px 18px;
+    }
+  }
+
   .header__logo {
     img {
       width: 160px;
@@ -66,8 +43,16 @@
       }
     }
 
+    .listing,
+    .brands,
+    .testimonials {
+      margin-right: 12px;
+      margin-left: 12px;
+    }
+
     .banner {
-      margin: 0 12px;
+      margin-right: 12px;
+      margin-left: 12px;
       &-group {
         .col__inner {
           height: 205px;
@@ -77,9 +62,19 @@
 
     .footer {
       .slogan-content {
+        margin-left: 12px;
+        margin-right: 12px;
+
         p {
           padding: 0 80px;
         }
+      }
+
+      .contact,
+      .socials,
+      .copyrights {
+        margin-left: 12px;
+        margin-right: 12px;
       }
       .contact-list-item {
         min-height: 32px;
@@ -153,6 +148,8 @@
 
     &__action {
       height: @header-mobile-height;
+      position: relative;
+      left: -18px;
 
       i {
         padding: 8px 12px;
@@ -255,5 +252,37 @@
     font-size: 12px;
     padding: 12px 0px;
     max-width: 120px;
+  }
+}
+
+// Small device
+
+@media (max-width: 575.98px) {
+  .main-content {
+    .hero-content {
+      top: 65%;
+      margin-bottom: 4px;
+    }
+    .banner {
+      transform: none;
+    }
+    .listing {
+      .listing-item {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+    }
+    .testimonials {
+      .title {
+        font-size: 20px;
+      }
+      .user-img {
+        margin-top: 28px;
+      }
+      .description {
+        font-size: 12px;
+        line-height: 1.4;
+      }
+    }
   }
 }
