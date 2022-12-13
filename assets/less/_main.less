@@ -258,9 +258,12 @@
     .title {
       font-size: 38px;
       font-weight: 600;
+      line-height: 1.2;
     }
     .title,
     .user-img {
+      display: flex;
+      justify-content: center;
       margin-top: 64px;
     }
     .description {
@@ -281,6 +284,27 @@
       color: @text-color;
       margin-top: 14px;
       font-size: 14px;
+    }
+
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 18px;
+      li {
+        margin: 0 4px;
+        button {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border: none;
+        }
+      }
+      .slick-active {
+        button {
+          background: @primary-color;
+        }
+      }
     }
   }
 

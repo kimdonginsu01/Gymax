@@ -267,11 +267,21 @@
       transform: none;
     }
     .listing {
-      .listing-item {
-        font-size: 12px;
-        padding: 8px 12px;
+      &-option {
+        display: flex;
+        justify-content: center;
+        .listing-item {
+          font-size: 12px;
+          padding: 8px 12px;
+        }
       }
     }
+
+    .home-products .name,
+    .home-products .price {
+      font-size: 12px;
+    }
+
     .testimonials {
       .title {
         font-size: 20px;
@@ -279,9 +289,18 @@
       .user-img {
         margin-top: 28px;
       }
+      .user-name {
+        font-size: 16px;
+      }
+      .user-type {
+        margin-top: 8px;
+        font-size: 12px;
+      }
       .description {
         font-size: 12px;
         line-height: 1.4;
+        padding-left: 15px;
+        padding-right: 15px;
       }
     }
   }

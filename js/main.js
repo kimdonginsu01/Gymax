@@ -1,4 +1,16 @@
-const $ = document.querySelector.bind(document);
+// Slick config
+
+$(document).ready(function () {
+  $(".testimonials-content").slick({
+    arrows: false,
+    dots: true,
+  });
+
+  $(".testimonials .slick-dots li button").html("");
+});
+
+// Main
+
 const $$ = document.querySelectorAll.bind(document);
 
 $$(".listing-item").forEach((item) => {
