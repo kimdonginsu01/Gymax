@@ -50,3 +50,18 @@ document.querySelector(".mobile-menu").onclick = showModalMenu;
 modalContainer.onclick = (e) => e.stopPropagation();
 modalNav.onclick = hideModalMenu;
 document.querySelector(".modal-close").onclick = hideModalMenu;
+
+// Accordion
+
+const accordionElems = document.querySelectorAll(".accordion");
+accordionElems.forEach((item) => {
+  item.onclick = () => {
+    item.classList.toggle("accordion--active");
+    var panel = item.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  };
+});
