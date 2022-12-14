@@ -4,6 +4,8 @@ $(document).ready(function () {
   $(".testimonials-content").slick({
     arrows: false,
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
   });
 
   $(".testimonials .slick-dots li button").html("");
@@ -20,22 +22,31 @@ $$(".listing-item").forEach((item) => {
       item.classList.remove("listing-item--active")
     );
     item.classList.add("listing-item--active");
+
+    showList(item);
   };
 });
 
+function showList(item) {
+  let cateName = item.innerHTML;
+  cateName = cateName.toLowerCase().replaceAll(" ", "-");
+  $(".home-products").css("display", "none");
+  $(`.${cateName}`).css("display", "block");
+}
+
 function showModalMenu() {
-  $(".modal-nav").style.display = "block";
+  document.querySelector(".modal-nav").style.display = "block";
 }
 
 function hideModalMenu() {
-  $(".modal-nav").style.display = "none";
+  document.querySelector(".modal-nav").style.display = "none";
 }
 
-const modalNav = $(".modal-nav");
-const modalContainer = $(".modal-container");
+const modalNav = document.querySelector(".modal-nav");
+const modalContainer = document.querySelector(".modal-container");
 
-$(".mobile-menu").onclick = showModalMenu;
+document.querySelector(".mobile-menu").onclick = showModalMenu;
 
 modalContainer.onclick = (e) => e.stopPropagation();
 modalNav.onclick = hideModalMenu;
-$(".modal-close").onclick = hideModalMenu;
+document.querySelector(".modal-close").onclick = hideModalMenu;

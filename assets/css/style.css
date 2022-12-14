@@ -8635,7 +8635,7 @@ ul li {
   border-bottom-right-radius: 5px;
   margin-top: 12px;
 }
-.main-content .home-products .action-item--active {
+.main-content .home-products .action-item:hover {
   background-color: #dd2f31;
   color: #fff;
 }
@@ -8767,9 +8767,11 @@ ul li {
   font-size: 14px;
 }
 .main-content .footer .copyrights {
+  background: #151515;
   margin-top: 50px;
   padding: 16px 0;
   font-size: 14px;
+  color: #909090;
 }
 .modal-nav {
   position: absolute;
